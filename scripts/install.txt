@@ -7,7 +7,6 @@ add_usr_local_bin_to_path() {
   echo "Either provide password for superuser permission to append to /etc/paths."
   echo "Or press <Control+c> at this point and add it to path yourself\n"
   echo $TO_ADD | sudo tee -a /etc/paths
-  LINE_TO_ADD="PATH=\$PATH:$TO_ADD" >> ~/.zshrc
 }
 
 install_in_usr_local() {

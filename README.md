@@ -5,13 +5,13 @@ To convert your birthday on 1999-10-29 AD to nepali, run\
 
 ## Installing / Updating `ad2bs`
 
-### For macOS/Linux
+### If you have go installed.
+
+Have go >= 1.21 installed. Clone the repo, then run `go install .`
+
+### If you don't have go installed, for macOS/Linux:
 
 ```sh
 rm -f `which ad2bs`
 curl -s https://raw.githubusercontent.com/opensource-nepal/ad2bs/main/scripts/install.txt | sh
 ```
-
-### For Windows
-
-Have go >= 1.21 installed. Clone the repo, then run `go install .`
