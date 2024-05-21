@@ -1,17 +1,29 @@
-Convert a given AD date in the format YYYY-MM-DD to BS date in the same format.
+# ad2bs
 
-To convert your birthday on 1999-10-29 AD to nepali, run\
-`ad2bs 1999-10-29`
+Converts a given AD date to BS date and BS date to AD.
 
-## Installing / Updating `ad2bs`
+## Usage
 
-### If you have go installed.
+**Converting AD to BS**
 
-Have go >= 1.21 installed. Clone the repo, then run `go install .`
+```bash
+ad2bs YYYY-MM-DD
+```
 
-### If you don't have go installed, for macOS/Linux:
+**Converting BS to AD**
+
+```bash
+bs2ad YYYY-MM-DD
+```
+
+Example:
+
+```bash
+ad2bs 1999-10-29
+```
+
+## Installation
 
 ```sh
-rm -f `which ad2bs`
-curl -s https://raw.githubusercontent.com/opensource-nepal/ad2bs/main/scripts/install.txt | sh
+curl -s https://raw.githubusercontent.com/aj3sh/ad2bs/main/scripts/install.sh | sh
 ```
