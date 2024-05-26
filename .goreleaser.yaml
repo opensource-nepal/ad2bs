@@ -1,0 +1,30 @@
+project_name: ad2bs
+release:
+  github:
+    owner: opensource-nepal
+    name: ad2bs
+
+builds:
+  - id: ad2bs
+    main: cmd/ad2bs/main.go
+    binary: ad2bs
+    goos:
+      - linux
+      - darwin
+      - windows
+  - id: bs2ad
+    main: cmd/bs2ad/main.go
+    binary: bs2ad
+    goos:
+      - linux
+      - darwin
+      - windows
+
+nfpms:
+  - id: ad2bs
+    license: GPL-3.0
+    maintainer: Ajesh Sen Thapa<aj3sshh@gmail.com>
+    formats:
+      - deb
+      - rpm
+    bindir: /usr/local/bin
