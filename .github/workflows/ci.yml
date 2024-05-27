@@ -11,6 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Conventional Commitlint
+        uses: opensource-nepal/commitlint@v1
+        with:
+            verbose: true
+
       - uses: actions/setup-go@v5
         with:
           go-version: 1.22
