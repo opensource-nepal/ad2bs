@@ -25,5 +25,5 @@ ad2bs 1999-10-29
 ## Installation
 
 ```sh
-curl -s https://raw.githubusercontent.com/aj3sh/ad2bs/main/scripts/install.sh | sh
+curl -s https://raw.githubusercontent.com/opensource-nepal/ad2bs/main/scripts/install.sh | sh
 ```
