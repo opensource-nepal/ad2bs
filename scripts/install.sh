@@ -10,11 +10,11 @@ echo "Initializing download..."
 VERSION_ARG=$1
 
 # Constants
-REPO_URL="https://github.com/aj3sh/ad2bs"
+REPO_URL="https://github.com/opensource-nepal/ad2bs"
 RELEASES_URL="${REPO_URL}/releases"
 FILE_BASENAME="ad2bs"
 BINDIR=/usr/local/bin
-BINARIES=("ad2bs" "bs2ad")
+BINARIES="ad2bs bs2ad"
 
 github_release() {
     version=$1
@@ -71,7 +71,7 @@ rm -rf "$TMP_DIR/$TAR_FILE"
 cp "${TMP_DIR}/ad2bs" "${TMP_DIR}/bs2ad"
 
 # Installing binaries
-for binexe in "${BINARIES[@]}"; do
+for binexe in $BINARIES; do
     if [ "$OS" = "windows" ]; then
         binexe="${binexe}.exe"
     fi
