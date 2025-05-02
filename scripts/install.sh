@@ -67,9 +67,6 @@ echo "Installing ad2bs $VERSION"
 tar -xf "$TMP_DIR/$TAR_FILE" -C "$TMP_DIR"
 rm -rf "$TMP_DIR/$TAR_FILE"
 
-# TEMP: for temp bs2ad
-cp "${TMP_DIR}/ad2bs" "${TMP_DIR}/bs2ad"
-
 # Installing binaries
 for binexe in $BINARIES; do
     if [ "$OS" = "windows" ]; then
